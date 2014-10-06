@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<link rel="icon" type="image/png" href="imgs/favicon.png"/>
+	<title>HealthRank</title>
+	<meta name="author" content="healthrank.us" />
+	<meta name="description" content="Find the best hospital for your individual health needs" />
+	<meta name="keywords"  content="health rank ranking" />
+	<meta name="Resource-type" content="Document" />
+
+
+    <link rel="stylesheet" type="text/css" href="vendors/jquery.fullPage.css" />
+    <link rel="stylesheet" type="text/css" href="vendors/example3.css" />
+
+	<!--[if IE]>
+		<script type="text/javascript">
+			 var console = { log: function() {} };
+		</script>
+	<![endif]-->
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<script src="vendors/jquery.easings.min.js"></script>
+
+    <script type="text/javascript" src="vendors/jquery.fullPage.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('#fullpage').fullpage({
+				sectionsColor: ['white'],
+				anchors: ['welcome'],
+				menu: '#menu',
+				css3: true
+			});
+
+			$('#showExamples').click(function(e){
+				e.stopPropagation();
+				e.preventDefault();
+				$('#examplesList').toggle();
+			});
+
+			$('html').click(function(){
+				$('#examplesList').hide();
+			});
+		});
+	</script>
+
+</head>
+<body>
+
+<a href="https://twitter.com/share" class="twitter-share-button" data-url="http://healthrank.us" data-text="Find the best hospital for your individual health needs">Tweet</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
+<div id="fullpage">
+
+	<div class="section active" id="section0">
+		<img src="imgs/logo.png" alt="HealthRank" />
+
+		<p> <br /> <br /></p>
+		<h2>Coming Soon</h2>
+	</div>
+<div id="infoMenu">
+	<ul>
+		<li>
+			<a href="#" id="showExamples">info@healthrank.us</a>
+			<div id="examplesList">
+					<h3>HealthRank</h3>
+					NY State Health Innovation Challenge 2014 &middot; 2nd Place Winner
+			</div>
+		</li>
+		<li>&copy; 2014</li>
+	</ul>
+</div>
+
+</body>
+</html>
